@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="17" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-15T16:37:29 EET" name="Swag-Labs" finished-at="2023-09-15T16:37:29 EET" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Swag-Labs -->
+  <suite started-at="2023-09-15T16:36:32 EET" name="Swag-Labs (0)" finished-at="2023-09-15T16:37:02 EET" duration-ms="29909">
+    <groups>
+    </groups>
+    <test started-at="2023-09-15T16:36:32 EET" name="Check Login with Valid Data" finished-at="2023-09-15T16:36:47 EET" duration-ms="14939">
+      <class name="testcases.TC01_Login">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@1b6e1eff]" started-at="2023-09-15T16:36:32 EET" name="setupChromeDriver" finished-at="2023-09-15T16:36:38 EET" duration-ms="5746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeDriver -->
+        <test-method signature="checkLoginWithValidEmailandPassword_P()[pri:1, instance:testcases.TC01_Login@1b6e1eff]" started-at="2023-09-15T16:36:38 EET" name="checkLoginWithValidEmailandPassword_P" description="Check Login with Valid username and password" finished-at="2023-09-15T16:36:42 EET" duration-ms="3873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginWithValidEmailandPassword_P -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@1b6e1eff]" started-at="2023-09-15T16:36:42 EET" name="quite" finished-at="2023-09-15T16:36:47 EET" duration-ms="5240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- testcases.TC01_Login -->
+    </test> <!-- Check Login with Valid Data -->
+    <test started-at="2023-09-15T16:36:47 EET" name="Add All products to Cart" finished-at="2023-09-15T16:37:02 EET" duration-ms="14921">
+      <class name="testcases.TC02_CreateOrder">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC02_CreateOrder@4c48fe92]" started-at="2023-09-15T16:36:47 EET" name="setupChromeDriver" finished-at="2023-09-15T16:36:50 EET" duration-ms="2807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeDriver -->
+        <test-method signature="addAllItemsToCart()[pri:0, instance:testcases.TC02_CreateOrder@4c48fe92]" started-at="2023-09-15T16:36:50 EET" name="addAllItemsToCart" finished-at="2023-09-15T16:36:56 EET" duration-ms="6856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAllItemsToCart -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC02_CreateOrder@4c48fe92]" started-at="2023-09-15T16:36:56 EET" name="quite" finished-at="2023-09-15T16:37:02 EET" duration-ms="5253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- testcases.TC02_CreateOrder -->
+    </test> <!-- Add All products to Cart -->
+  </suite> <!-- Swag-Labs (0) -->
+  <suite started-at="2023-09-15T16:37:02 EET" name="Swag-Labs (1)" finished-at="2023-09-15T16:37:29 EET" duration-ms="26941">
+    <groups>
+    </groups>
+    <test started-at="2023-09-15T16:37:02 EET" name="check Login With Valid Email and Invalid password" finished-at="2023-09-15T16:37:11 EET" duration-ms="8856">
+      <class name="testcases.TC01_Login">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@36ddaebf]" started-at="2023-09-15T16:37:02 EET" name="setupChromeDriver" finished-at="2023-09-15T16:37:05 EET" duration-ms="2790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeDriver -->
+        <test-method signature="checkLoginWithValidEmailandInvalidpassword_N()[pri:2, instance:testcases.TC01_Login@36ddaebf]" started-at="2023-09-15T16:37:05 EET" name="checkLoginWithValidEmailandInvalidpassword_N" description="Check Login with Valid username and Invalid password" finished-at="2023-09-15T16:37:05 EET" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginWithValidEmailandInvalidpassword_N -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@36ddaebf]" started-at="2023-09-15T16:37:05 EET" name="quite" finished-at="2023-09-15T16:37:11 EET" duration-ms="5301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- testcases.TC01_Login -->
+    </test> <!-- check Login With Valid Email and Invalid password -->
+    <test started-at="2023-09-15T16:37:11 EET" name="check Login With Invalid Email and Valid password" finished-at="2023-09-15T16:37:19 EET" duration-ms="8597">
+      <class name="testcases.TC01_Login">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@3cff0139]" started-at="2023-09-15T16:37:11 EET" name="setupChromeDriver" finished-at="2023-09-15T16:37:13 EET" duration-ms="2700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeDriver -->
+        <test-method signature="checkLoginWithInvalidEmailandValidpassword_N()[pri:3, instance:testcases.TC01_Login@3cff0139]" started-at="2023-09-15T16:37:13 EET" name="checkLoginWithInvalidEmailandValidpassword_N" description="Check Login with Invalid username and Valid password" finished-at="2023-09-15T16:37:14 EET" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginWithInvalidEmailandValidpassword_N -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@3cff0139]" started-at="2023-09-15T16:37:14 EET" name="quite" finished-at="2023-09-15T16:37:19 EET" duration-ms="5217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- testcases.TC01_Login -->
+    </test> <!-- check Login With Invalid Email and Valid password -->
+    <test started-at="2023-09-15T16:37:19 EET" name="check Login With Invalid Email and Invalid password" finished-at="2023-09-15T16:37:29 EET" duration-ms="9461">
+      <class name="testcases.TC01_Login">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@f096f37]" started-at="2023-09-15T16:37:19 EET" name="setupChromeDriver" finished-at="2023-09-15T16:37:22 EET" duration-ms="2877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupChromeDriver -->
+        <test-method signature="checkLoginWithInvalidEmailandInvalidpassword_N()[pri:4, instance:testcases.TC01_Login@f096f37]" started-at="2023-09-15T16:37:22 EET" name="checkLoginWithInvalidEmailandInvalidpassword_N" description="Check Login with Invalid username and Invalid password" finished-at="2023-09-15T16:37:23 EET" duration-ms="1265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginWithInvalidEmailandInvalidpassword_N -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@f096f37]" started-at="2023-09-15T16:37:23 EET" name="quite" finished-at="2023-09-15T16:37:29 EET" duration-ms="5318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- testcases.TC01_Login -->
+    </test> <!-- check Login With Invalid Email and Invalid password -->
+  </suite> <!-- Swag-Labs (1) -->
+</testng-results>
