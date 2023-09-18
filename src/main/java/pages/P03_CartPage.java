@@ -24,7 +24,7 @@ public class P03_CartPage {
         for (int i = 0; i <priceList.size(); i++) {
             Total += Double.parseDouble(priceList.get(i).getText());
         }
-        System.out.println("Total Price = "+Total);
+        System.out.println("Total Price in cart page  = "+Total);
     return this;
     }
 

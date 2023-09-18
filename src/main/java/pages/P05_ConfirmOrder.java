@@ -3,11 +3,15 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utility.Utilities;
 
 import java.util.List;
 
+import static pages.P02_HomePage.totalPrice;
+
 public class P05_ConfirmOrder {
-    double totalDouble = 0.0;
+    static float expectedFinalTotal;
+
     WebDriver driver;
 
     public P05_ConfirmOrder(WebDriver driver) {
@@ -21,44 +25,57 @@ public class P05_ConfirmOrder {
     private final By FinishButton = By.xpath("//a[@class=\"btn_action cart_button\"]");
 
 
-    public void checkSumTotal() {
-        String totalString;
-        List<WebElement> items = driver.findElements(itemsPriceList);
-        for (int i = 0; i < items.size(); i++) {
-            items.get(i).getText();
-            totalString = items.get(i).getText();
-            totalString = totalString.replace("$", "");
-            totalDouble += Double.parseDouble(totalString);
-        }
-        System.out.println("Total items price = " + totalDouble);
+
+
+    public boolean checkTotalPriceBeforeTax()
+    {
+        return driver.findElement(itemsTotal).getText().equals("Item total: $" +totalPrice);
     }
 
-    public boolean assertTotalPrice() {
-        checkSumTotal();
-        return driver.findElement(itemsTotal).getText().equals("Item total: $" + totalDouble);
-    }
-
-    public Double getSumtTotalPriceAndTax() {
-        double expectedFinalTotal;
+        public P05_ConfirmOrder getSumTotalPriceAndTax() {
         String taxString;
-        double taxDouble ;
+        float taxFloat ;
         taxString = driver.findElement(Tax).getText();
-        taxString = taxString.replace("Tax: $", "");
-        taxDouble = Double.parseDouble(taxString);
-        System.out.println(taxDouble);
+        taxFloat = Utilities.string_to_Float(taxString,"Tax: $");
+        System.out.println("Tax price = "+taxFloat);
         //Expected final total = Total Items + Tax
-        expectedFinalTotal = totalDouble + taxDouble;
-        System.out.println(expectedFinalTotal);
-        return expectedFinalTotal;
+        expectedFinalTotal = totalPrice + taxFloat;
+        System.out.println("Total with tax = "+expectedFinalTotal);
+        return this;
     }
 
-    public boolean assertFinalPrice() {
-        return driver.findElement(FinalTotal).getText().equals("Total: $" + getSumtTotalPriceAndTax());
+        public boolean assertFinalPrice() {
+        return driver.findElement(FinalTotal).getText().equals("Total: $" + expectedFinalTotal);
     }
 
     public P05_ConfirmOrder pressFinishButton() {
         driver.findElement(FinishButton).click();
         return this;
     }
+
+
+
+////// ANOTHER WAY ////
+
+    //    double totalDouble = 0.0;
+//    public void checkSumTotal() {
+//        String totalString;
+//
+//        List<WebElement> items = driver.findElements(itemsPriceList);
+//        for (int i = 0; i < items.size(); i++) {
+//            items.get(i).getText();
+//            totalString = items.get(i).getText();
+//            totalString = totalString.replace("$", "");
+//            totalDouble += Double.parseDouble(totalString);
+//        }
+//        System.out.println("Total items price = " + totalDouble);
+//    }
+//
+//    public boolean assertTotalPrice() {
+//        checkSumTotal();
+//        return driver.findElement(itemsTotal).getText().equals("Item total: $" + totalDouble);
+//    }
+//
+
 
 }

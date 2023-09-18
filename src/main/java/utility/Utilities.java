@@ -22,14 +22,32 @@ public class Utilities {
     }
 
     //Todo: capture screenshot
-    public static void captureScreenShot(WebDriver driver,String screenshotName){
+    public static void captureScreenShot(WebDriver driver, String screenshotName) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-        Date currntDate=new Date();
-        String screenshot=screenshotName+currntDate.toString().replace(" ","-").replace(":","-");
+        Date currntDate = new Date();
+        String screenshot = screenshotName + currntDate.toString().replace(" ", "-").replace(":", "-");
         try {
-            FileHandler.copy(takesScreenshot.getScreenshotAs(OutputType.FILE),new File(System.getProperty("user.dir")+"/src/test/resources/screenshots/"+screenshot+".png"));
+            FileHandler.copy(takesScreenshot.getScreenshotAs(OutputType.FILE), new File(System.getProperty("user.dir") + "/src/test/resources/screenshots/" + screenshot + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+
+    public static float string_to_Float(String text, String replaceValu) {
+        text = text.replace(replaceValu, "");
+        return Float.parseFloat(text);
+    }
+
+    public static float removeFirstLetterAndReturnFloatNumber(String string) {
+        if (string == null || string.isEmpty()) {
+            return 0.0f;
+        }
+
+        try {
+            return Float.parseFloat(string.substring(1));
+        } catch (NumberFormatException e) {
+            return 0.0f;
         }
     }
 }
