@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 77.081 s <<< FAILURE! - in TestSuite
+testcases.TC02_CreateOrder.addAllItemsToCart  Time elapsed: 43.019 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at testcases.TC02_CreateOrder.addAllItemsToCart(TC02_CreateOrder.java:50)
+

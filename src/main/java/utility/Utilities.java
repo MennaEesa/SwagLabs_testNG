@@ -1,11 +1,17 @@
 package utility;
 
+//import com.google.gson.JsonObject;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Random;
@@ -49,5 +55,20 @@ public class Utilities {
         } catch (NumberFormatException e) {
             return 0.0f;
         }
+    }
+    // read data from json file
+    public static String getData(String jsonPath, String field) {
+        try{
+        // define object of json parser
+        JSONParser parser=new JSONParser();
+        // define object of file reader
+        FileReader reader=new FileReader(jsonPath);
+        Object object= parser.parse(reader);
+        JSONObject jsonObject= (JSONObject) object;
+        return jsonObject.get(field).toString();}
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return "";
     }
 }

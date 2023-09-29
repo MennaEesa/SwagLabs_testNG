@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Swag-Labs (0)]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value=""/>
+  <test thread-count="5" name="Add All products to Cart(failed)" verbose="0">
+    <classes>
+      <class name="testcases.TC02_CreateOrder">
+        <methods>
+          <include name="addAllItemsToCart"/>
+          <include name="setupChromeDriver"/>
+          <include name="quite"/>
+        </methods>
+      </class> <!-- testcases.TC02_CreateOrder -->
+    </classes>
+  </test> <!-- Add All products to Cart(failed) -->
+</suite> <!-- Failed suite [Swag-Labs (0)] -->

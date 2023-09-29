@@ -218,23 +218,6 @@
           <div class="suite-Swag_Labs__0_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC02_CreateOrder</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addAllItemsToCart">
-                  </a> <!-- addAllItemsToCart -->
-                  <span class="method-name">addAllItemsToCart</span>
-                  <em>
-(check add products to list and validate total)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Swag_Labs__0_-class-passed -->
-          <div class="suite-Swag_Labs__0_-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.TC01_Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -245,6 +228,23 @@
                   <span class="method-name">checkLoginWithValidEmailandPassword_P</span>
                   <em>
 (Check Login with Valid username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Swag_Labs__0_-class-passed -->
+          <div class="suite-Swag_Labs__0_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC02_CreateOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAllItemsToCart">
+                  </a> <!-- addAllItemsToCart -->
+                  <span class="method-name">addAllItemsToCart</span>
+                  <em>
+(check add products to list and validate total)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -483,16 +483,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addAllItemsToCart')
 data.setCell(0, 2, 'testcases.TC02_CreateOrder')
-data.setCell(0, 3, 5529);
+data.setCell(0, 3, 16247);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkLoginWithValidEmailandPassword_P')
 data.setCell(1, 2, 'testcases.TC01_Login')
-data.setCell(1, 3, 4042);
+data.setCell(1, 3, 6156);
 window.suiteTableData['Swag_Labs__0_']= { tableData: data, tableDiv: 'times-div-Swag_Labs__0_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Swag_Labs__0_">
               </div> <!-- times-div-Swag_Labs__0_ -->
             </div> <!-- times-div -->
@@ -514,22 +514,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkLoginWithInvalidEmailandValidpassword_N')
+data.setCell(0, 1, 'checkLoginWithInvalidEmailandInvalidpassword_N')
 data.setCell(0, 2, 'testcases.TC01_Login')
-data.setCell(0, 3, 463);
+data.setCell(0, 3, 2786);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkLoginWithInvalidEmailandInvalidpassword_N')
+data.setCell(1, 1, 'checkLoginWithValidEmailandInvalidpassword_N')
 data.setCell(1, 2, 'testcases.TC01_Login')
-data.setCell(1, 3, 463);
+data.setCell(1, 3, 2504);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkLoginWithValidEmailandInvalidpassword_N')
+data.setCell(2, 1, 'checkLoginWithInvalidEmailandValidpassword_N')
 data.setCell(2, 2, 'testcases.TC01_Login')
-data.setCell(2, 3, 453);
+data.setCell(2, 3, 2298);
 window.suiteTableData['Swag_Labs__1_']= { tableData: data, tableDiv: 'times-div-Swag_Labs__1_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Swag_Labs__1_">
               </div> <!-- times-div-Swag_Labs__1_ -->
             </div> <!-- times-div -->
@@ -573,9 +573,9 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">checkLoginWithInvalidEmailandValidpassword_N</span>
                 <br/>
-                <span class="ignored-method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
-                <br/>
                 <span class="ignored-method-name">checkLoginWithValidEmailandInvalidpassword_N</span>
+                <br/>
+                <span class="ignored-method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -589,9 +589,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.TC01_Login</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
+                <span class="ignored-method-name">checkLoginWithValidEmailandPassword_P</span>
                 <br/>
                 <span class="ignored-method-name">checkLoginWithValidEmailandPassword_P</span>
+                <br/>
+                <span class="ignored-method-name">checkLoginWithValidEmailandInvalidpassword_N</span>
+                <br/>
+                <span class="ignored-method-name">checkLoginWithInvalidEmailandValidpassword_N</span>
                 <br/>
                 <span class="ignored-method-name">checkLoginWithInvalidEmailandValidpassword_N</span>
                 <br/>
@@ -601,11 +605,7 @@ return data;
                 <br/>
                 <span class="ignored-method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
                 <br/>
-                <span class="ignored-method-name">checkLoginWithValidEmailandInvalidpassword_N</span>
-                <br/>
-                <span class="ignored-method-name">checkLoginWithValidEmailandPassword_P</span>
-                <br/>
-                <span class="ignored-method-name">checkLoginWithInvalidEmailandValidpassword_N</span>
+                <span class="ignored-method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -631,26 +631,26 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkLoginWithValidEmailandPassword_P</span>
-                <span class="method-start">3870 ms</span>
+                <span class="method-start">14564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">7917 ms</span>
+                <span class="method-start">20737 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC02_CreateOrder</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupChromeDriver()</span>
-                <span class="method-start">13124 ms</span>
+                <span class="method-start">29557 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">addAllItemsToCart</span>
-                <span class="method-start">15422 ms</span>
+                <span class="method-start">37454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">20952 ms</span>
+                <span class="method-start">53706 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -667,35 +667,35 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkLoginWithValidEmailandInvalidpassword_N</span>
-                <span class="method-start">2382 ms</span>
+                <span class="method-start">8688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">2836 ms</span>
+                <span class="method-start">11194 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setupChromeDriver()</span>
-                <span class="method-start">7992 ms</span>
+                <span class="method-start">19184 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkLoginWithInvalidEmailandValidpassword_N</span>
-                <span class="method-start">10234 ms</span>
+                <span class="method-start">27112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">10698 ms</span>
+                <span class="method-start">29411 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setupChromeDriver()</span>
-                <span class="method-start">15837 ms</span>
+                <span class="method-start">39221 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkLoginWithInvalidEmailandInvalidpassword_N</span>
-                <span class="method-start">18155 ms</span>
+                <span class="method-start">49475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quite</span>
-                <span class="method-start">18618 ms</span>
+                <span class="method-start">52262 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

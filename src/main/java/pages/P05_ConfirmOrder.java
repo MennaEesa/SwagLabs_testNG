@@ -8,9 +8,11 @@ import utility.Utilities;
 import java.util.List;
 
 import static pages.P02_HomePage.totalPrice;
+import static pages.P02_HomePage.totalPriceOfRemovedItems;
 
 public class P05_ConfirmOrder {
     static float expectedFinalTotal;
+    static float priceTextFloat;
 
     WebDriver driver;
 
@@ -25,7 +27,11 @@ public class P05_ConfirmOrder {
     private final By FinishButton = By.xpath("//a[@class=\"btn_action cart_button\"]");
 
 
-
+    public boolean checkTotalPriceAfterRemoveProduct()
+    {
+        System.out.println(totalPrice);
+        return driver.findElement(itemsTotal).getText().equals("Item total: $" +(totalPrice-totalPriceOfRemovedItems));
+    }
 
     public boolean checkTotalPriceBeforeTax()
     {

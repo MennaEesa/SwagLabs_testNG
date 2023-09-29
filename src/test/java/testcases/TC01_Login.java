@@ -8,12 +8,13 @@ import utility.Utilities;
 public class TC01_Login extends TestBase {
 
     /// define test data
-    public static String USERNAME="standard_user";
-    public static String PASSWORD="secret_sauce";
+    public static String USERNAME=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","username");
+    public static String PASSWORD=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","password");
     // positive testcases
     // TODO: create test case to check login with valid email and password
     @Test(priority = 1,description = "Check Login with Valid username and password")
     public void checkLoginWithValidEmailandPassword_P(){
+        System.out.println("username:"+USERNAME);
         new P01_LoginPage(driver).enterEmail(USERNAME).enterPassword(PASSWORD).clickLoginButton();
         // capture screenshot after login
         Utilities.captureScreenShot(driver,"P_login");

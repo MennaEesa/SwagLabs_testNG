@@ -2,16 +2,16 @@
 <testng-results ignored="12" total="17" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-18T21:04:17 EET" name="Swag-Labs" finished-at="2023-09-18T21:04:17 EET" duration-ms="0">
+  <suite started-at="2023-09-29T15:56:54 EET" name="Swag-Labs" finished-at="2023-09-29T15:56:54 EET" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- Swag-Labs -->
-  <suite started-at="2023-09-18T21:03:26 EET" name="Swag-Labs (0)" finished-at="2023-09-18T21:03:53 EET" duration-ms="26125">
+  <suite started-at="2023-09-29T15:54:51 EET" name="Swag-Labs (0)" finished-at="2023-09-29T15:55:53 EET" duration-ms="62240">
     <groups>
     </groups>
-    <test started-at="2023-09-18T21:03:26 EET" name="Check Login with Valid Data" finished-at="2023-09-18T21:03:40 EET" duration-ms="13089">
+    <test started-at="2023-09-29T15:54:51 EET" name="Check Login with Valid Data" finished-at="2023-09-29T15:55:20 EET" duration-ms="29463">
       <class name="testcases.TC01_Login">
-        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@48974e45]" started-at="2023-09-18T21:03:26 EET" name="setupChromeDriver" finished-at="2023-09-18T21:03:30 EET" duration-ms="3825" status="PASS">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@534a5a98]" started-at="2023-09-29T15:54:51 EET" name="setupChromeDriver" finished-at="2023-09-29T15:55:05 EET" duration-ms="14377" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,19 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupChromeDriver -->
-        <test-method signature="checkLoginWithValidEmailandPassword_P()[pri:1, instance:testcases.TC01_Login@48974e45]" started-at="2023-09-18T21:03:30 EET" name="checkLoginWithValidEmailandPassword_P" description="Check Login with Valid username and password" finished-at="2023-09-18T21:03:34 EET" duration-ms="4042" status="PASS">
+        <test-method signature="checkLoginWithValidEmailandPassword_P()[pri:1, instance:testcases.TC01_Login@534a5a98]" started-at="2023-09-29T15:55:05 EET" name="checkLoginWithValidEmailandPassword_P" description="Check Login with Valid username and password" finished-at="2023-09-29T15:55:11 EET" duration-ms="6156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginWithValidEmailandPassword_P -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@48974e45]" started-at="2023-09-18T21:03:34 EET" name="quite" finished-at="2023-09-18T21:03:40 EET" duration-ms="5164" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@534a5a98]" started-at="2023-09-29T15:55:11 EET" name="quite" finished-at="2023-09-29T15:55:20 EET" duration-ms="8704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- testcases.TC01_Login -->
     </test> <!-- Check Login with Valid Data -->
-    <test started-at="2023-09-18T21:03:40 EET" name="Add All products to Cart" finished-at="2023-09-18T21:03:53 EET" duration-ms="12994">
+    <test started-at="2023-09-29T15:55:20 EET" name="Add All products to Cart" finished-at="2023-09-29T15:55:53 EET" duration-ms="32661">
       <class name="testcases.TC02_CreateOrder">
-        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC02_CreateOrder@9d7ccfe]" started-at="2023-09-18T21:03:40 EET" name="setupChromeDriver" finished-at="2023-09-18T21:03:42 EET" duration-ms="2297" status="PASS">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC02_CreateOrder@23f3dbf0]" started-at="2023-09-29T15:55:20 EET" name="setupChromeDriver" finished-at="2023-09-29T15:55:28 EET" duration-ms="7890" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,23 +45,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupChromeDriver -->
-        <test-method signature="addAllItemsToCart()[pri:1, instance:testcases.TC02_CreateOrder@9d7ccfe]" started-at="2023-09-18T21:03:42 EET" name="addAllItemsToCart" description="check add products to list and validate total" finished-at="2023-09-18T21:03:47 EET" duration-ms="5529" status="PASS">
+        <test-method signature="addAllItemsToCart()[pri:1, instance:testcases.TC02_CreateOrder@23f3dbf0]" started-at="2023-09-29T15:55:28 EET" name="addAllItemsToCart" description="check add products to list and validate total" finished-at="2023-09-29T15:55:44 EET" duration-ms="16247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllItemsToCart -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC02_CreateOrder@9d7ccfe]" started-at="2023-09-18T21:03:47 EET" name="quite" finished-at="2023-09-18T21:03:53 EET" duration-ms="5166" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC02_CreateOrder@23f3dbf0]" started-at="2023-09-29T15:55:44 EET" name="quite" finished-at="2023-09-29T15:55:53 EET" duration-ms="8512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- testcases.TC02_CreateOrder -->
     </test> <!-- Add All products to Cart -->
   </suite> <!-- Swag-Labs (0) -->
-  <suite started-at="2023-09-18T21:03:53 EET" name="Swag-Labs (1)" finished-at="2023-09-18T21:04:16 EET" duration-ms="23751">
+  <suite started-at="2023-09-29T15:55:53 EET" name="Swag-Labs (1)" finished-at="2023-09-29T15:56:53 EET" duration-ms="60472">
     <groups>
     </groups>
-    <test started-at="2023-09-18T21:03:53 EET" name="check Login With Valid Email and Invalid password" finished-at="2023-09-18T21:04:01 EET" duration-ms="7980">
+    <test started-at="2023-09-29T15:55:53 EET" name="check Login With Valid Email and Invalid password" finished-at="2023-09-29T15:56:12 EET" duration-ms="19140">
       <class name="testcases.TC01_Login">
-        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@4b2e3e8f]" started-at="2023-09-18T21:03:53 EET" name="setupChromeDriver" finished-at="2023-09-18T21:03:55 EET" duration-ms="2381" status="PASS">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@37303f12]" started-at="2023-09-29T15:55:53 EET" name="setupChromeDriver" finished-at="2023-09-29T15:56:02 EET" duration-ms="8686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,19 +72,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupChromeDriver -->
-        <test-method signature="checkLoginWithValidEmailandInvalidpassword_N()[pri:2, instance:testcases.TC01_Login@4b2e3e8f]" started-at="2023-09-18T21:03:55 EET" name="checkLoginWithValidEmailandInvalidpassword_N" description="Check Login with Valid username and Invalid password" finished-at="2023-09-18T21:03:55 EET" duration-ms="453" status="PASS">
+        <test-method signature="checkLoginWithValidEmailandInvalidpassword_N()[pri:2, instance:testcases.TC01_Login@37303f12]" started-at="2023-09-29T15:56:02 EET" name="checkLoginWithValidEmailandInvalidpassword_N" description="Check Login with Valid username and Invalid password" finished-at="2023-09-29T15:56:04 EET" duration-ms="2504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginWithValidEmailandInvalidpassword_N -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@4b2e3e8f]" started-at="2023-09-18T21:03:55 EET" name="quite" finished-at="2023-09-18T21:04:01 EET" duration-ms="5144" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@37303f12]" started-at="2023-09-29T15:56:04 EET" name="quite" finished-at="2023-09-29T15:56:12 EET" duration-ms="7945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- testcases.TC01_Login -->
     </test> <!-- check Login With Valid Email and Invalid password -->
-    <test started-at="2023-09-18T21:04:01 EET" name="check Login With Invalid Email and Valid password" finished-at="2023-09-18T21:04:08 EET" duration-ms="7832">
+    <test started-at="2023-09-29T15:56:12 EET" name="check Login With Invalid Email and Valid password" finished-at="2023-09-29T15:56:32 EET" duration-ms="20005">
       <class name="testcases.TC01_Login">
-        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@41f4fe5]" started-at="2023-09-18T21:04:01 EET" name="setupChromeDriver" finished-at="2023-09-18T21:04:03 EET" duration-ms="2241" status="PASS">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@165e389b]" started-at="2023-09-29T15:56:12 EET" name="setupChromeDriver" finished-at="2023-09-29T15:56:20 EET" duration-ms="7924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,19 +95,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupChromeDriver -->
-        <test-method signature="checkLoginWithInvalidEmailandValidpassword_N()[pri:3, instance:testcases.TC01_Login@41f4fe5]" started-at="2023-09-18T21:04:03 EET" name="checkLoginWithInvalidEmailandValidpassword_N" description="Check Login with Invalid username and Valid password" finished-at="2023-09-18T21:04:03 EET" duration-ms="463" status="PASS">
+        <test-method signature="checkLoginWithInvalidEmailandValidpassword_N()[pri:3, instance:testcases.TC01_Login@165e389b]" started-at="2023-09-29T15:56:20 EET" name="checkLoginWithInvalidEmailandValidpassword_N" description="Check Login with Invalid username and Valid password" finished-at="2023-09-29T15:56:22 EET" duration-ms="2298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginWithInvalidEmailandValidpassword_N -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@41f4fe5]" started-at="2023-09-18T21:04:03 EET" name="quite" finished-at="2023-09-18T21:04:08 EET" duration-ms="5126" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@165e389b]" started-at="2023-09-29T15:56:22 EET" name="quite" finished-at="2023-09-29T15:56:32 EET" duration-ms="9774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- testcases.TC01_Login -->
     </test> <!-- check Login With Invalid Email and Valid password -->
-    <test started-at="2023-09-18T21:04:08 EET" name="check Login With Invalid Email and Invalid password" finished-at="2023-09-18T21:04:16 EET" duration-ms="7914">
+    <test started-at="2023-09-29T15:56:32 EET" name="check Login With Invalid Email and Invalid password" finished-at="2023-09-29T15:56:53 EET" duration-ms="21250">
       <class name="testcases.TC01_Login">
-        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@6f4ade6e]" started-at="2023-09-18T21:04:08 EET" name="setupChromeDriver" finished-at="2023-09-18T21:04:11 EET" duration-ms="2317" status="PASS">
+        <test-method is-config="true" signature="setupChromeDriver(java.lang.String)[pri:0, instance:testcases.TC01_Login@4dc8c0ea]" started-at="2023-09-29T15:56:32 EET" name="setupChromeDriver" finished-at="2023-09-29T15:56:42 EET" duration-ms="10252" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,11 +118,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupChromeDriver -->
-        <test-method signature="checkLoginWithInvalidEmailandInvalidpassword_N()[pri:4, instance:testcases.TC01_Login@6f4ade6e]" started-at="2023-09-18T21:04:11 EET" name="checkLoginWithInvalidEmailandInvalidpassword_N" description="Check Login with Invalid username and Invalid password" finished-at="2023-09-18T21:04:11 EET" duration-ms="463" status="PASS">
+        <test-method signature="checkLoginWithInvalidEmailandInvalidpassword_N()[pri:4, instance:testcases.TC01_Login@4dc8c0ea]" started-at="2023-09-29T15:56:43 EET" name="checkLoginWithInvalidEmailandInvalidpassword_N" description="Check Login with Invalid username and Invalid password" finished-at="2023-09-29T15:56:45 EET" duration-ms="2786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginWithInvalidEmailandInvalidpassword_N -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@6f4ade6e]" started-at="2023-09-18T21:04:11 EET" name="quite" finished-at="2023-09-18T21:04:16 EET" duration-ms="5133" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:testcases.TC01_Login@4dc8c0ea]" started-at="2023-09-29T15:56:45 EET" name="quite" finished-at="2023-09-29T15:56:53 EET" duration-ms="8209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
