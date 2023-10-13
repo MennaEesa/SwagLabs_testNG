@@ -1,20 +1,30 @@
 package testcases;
 
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.P01_LoginPage;
+import retry.MyRetry;
 import utility.Utilities;
 
+@Epic("login Feature")
+@Story("login")
 public class TC01_Login extends TestBase {
 
     /// define test data
-    public static String USERNAME=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","username");
-    public static String PASSWORD=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","password");
+//    public static String USERNAME=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","username");
+//    public static String PASSWORD=Utilities.getData(System.getProperty("user.dir")+"/src/test/resources/data/logindata.json","password");
+    static String USERNAME ;
+    static String PASSWORD ;
+
     // positive testcases
     // TODO: create test case to check login with valid email and password
-    @Test(priority = 1,description = "Check Login with Valid username and password")
+    @Test(priority = 1,description = "Check Login with Valid username and password",retryAnalyzer = MyRetry.class)
+    @Description("Login with Valid username and password")
+    @Severity(SeverityLevel.CRITICAL)
     public void checkLoginWithValidEmailandPassword_P(){
-        System.out.println("username:"+USERNAME);
+        USERNAME =Utilities.getExcelData(1,0,"sheet1");
+        PASSWORD =Utilities.getExcelData(1,1,"sheet1");
         new P01_LoginPage(driver).enterEmail(USERNAME).enterPassword(PASSWORD).clickLoginButton();
         // capture screenshot after login
         Utilities.captureScreenShot(driver,"P_login");

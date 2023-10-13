@@ -1,6 +1,8 @@
 package utility;
 
 //import com.google.gson.JsonObject;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -70,5 +72,24 @@ public class Utilities {
             e.printStackTrace();
         }
         return "";
+    }
+
+    // TODO: Read Data From Excel Sheet
+    public static String getExcelData(int RowNum, int ColNum, String SheetName) {
+        XSSFWorkbook workBook;
+        XSSFSheet sheet;
+        String projectPath = System.getProperty("user.dir");
+        String cellData = null;
+        try {
+            workBook = new XSSFWorkbook(projectPath + "/src/test/resources/data/logindata.xlsx");
+            sheet = workBook.getSheet(SheetName);
+            cellData = sheet.getRow(RowNum).getCell(ColNum).getStringCellValue();
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            System.out.println(e.getCause());
+            e.printStackTrace();
+        }
+        return cellData;
     }
 }

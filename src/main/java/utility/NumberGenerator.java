@@ -23,11 +23,11 @@ public class NumberGenerator {
         return randomNumber;
     }
 
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         NumberGenerator generator = new NumberGenerator();
 
         // Generate 10 unique random numbers between 1 and 100
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 6; i++) {
             int uniqueRandomNumber = generator.generateUniqueRandomNumber(6);
             System.out.println("Generated unique random number: " + uniqueRandomNumber);
         }

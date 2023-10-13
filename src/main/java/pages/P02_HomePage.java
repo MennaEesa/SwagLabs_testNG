@@ -20,11 +20,12 @@ public class P02_HomePage {
     private final By cartPage = By.xpath("//a[@href=\"./cart.html\"]");
     private final By removeButton = By.xpath("//button[@class=\"btn_secondary btn_inventory\"]");
 
-    static float totalPrice = 0;
+    static float totalPrice ;
     static float totalPriceOfRemovedItems = 0;
 
 
     public P02_HomePage addRandomProductsToCart(int size) throws InterruptedException {
+        totalPrice = 0;
         NumberGenerator generator = new NumberGenerator();
         List<WebElement> addToCartButtonsList = driver.findElements(addToCartElement);
         for (int i = 0; i < size; i++) {

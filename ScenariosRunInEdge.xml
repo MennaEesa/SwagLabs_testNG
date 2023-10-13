@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Swag-Labs">
+    <listeners>
+        <listener class-name="listener.Listener"></listener>
+    </listeners>
+    <parameter name="browser" value="edge"/>
+    <test  name="Check Login with Valid Data">
+        <classes>
+            <class name="testcases.TC01_Login">
+                <methods>
+                    <include name="checkLoginWithValidEmailandPassword_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test  name="Add All products to Cart">
+        <classes>
+            <class name="testcases.TC02_CreateOrder">
+                <methods>
+                    <include name="addAllItemsToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

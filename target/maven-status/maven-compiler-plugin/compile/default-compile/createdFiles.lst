@@ -7,3 +7,4 @@ utility\Utilities.class
 pages\P02_HomePage.class
 drivers\DriverFactory.class
 drivers\DriverHolder.class
+ScreenRecorder\screenRecorder.class

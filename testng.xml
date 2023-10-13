@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Swag-Labs">
+<suite name="Swag-Labs" parallel="tests" thread-count="1">
     <suite-files>
-        <suite-file path="PositiveScenarios.xml"/>
-        <suite-file path="NegativeScenarios.xml"/>
+        <suite-file path="ScenariosRunInChrome.xml"/>
+        <suite-file path="ScenariosRunInEdge.xml"/>
+        <suite-file path="ScenariosRunInFireFox.xml"/>
     </suite-files>
 </suite>

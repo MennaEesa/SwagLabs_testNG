@@ -5,17 +5,18 @@ import drivers.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
 import static drivers.DriverHolder.setDriver;
 
+@Listeners(listener.Listener.class)
 public class TestBase {
     WebDriver driver;
 
    public static Faker faker=new Faker();
-
 
     @Parameters("browser")
     @BeforeTest()
